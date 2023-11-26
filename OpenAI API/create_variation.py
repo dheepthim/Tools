@@ -4,7 +4,7 @@ import requests
 client = OpenAI()
 
 response = client.images.create_variation(
-  image = open("OpenAI API/PNGs/image1.png", "rb"),
+  image = open("OpenAI API/PNGs/image4.png", "rb"),
   model = "dall-e-2",
   n = 1,
   response_format = "url",
@@ -12,5 +12,5 @@ response = client.images.create_variation(
 )
 
 data = requests.get(response.data[0].url).content
-with open('OpenAI API/Variations/variations1-1.png', 'wb') as fh:
+with open('OpenAI API/Variations/variations4-1.png', 'wb') as fh:
   fh.write(data)
