@@ -1,6 +1,6 @@
 <h1 align="center">Tools</h1>
 
-## Tools utilized:
+## Tools Utilized:
 - OpenAI API
 
 ## Libraries Utilized:
